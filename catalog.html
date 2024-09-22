@@ -5,7 +5,7 @@
     <title>Гостиницы</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <img class="logo" src="#" alt="Логотип Седона">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -36,8 +36,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
-      <header class="inner-header">
+    <main class="main-inner" data-test="main">
+      <header class="inner-header" data-test="header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -49,7 +49,7 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-        <section class="catalog-filter-products">
+        <section class="catalog-filter-products" data-test="catalog">
           <h2 class="visually-hidden">Список гостинец с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
@@ -114,7 +114,7 @@
           </form>
         </section>
       </header>
-      <section class="catalog-products">
+      <section class="catalog-products" data-test="catalog">
         <h2 class="catalog-products-title">Найдено гостиниц:<span>38</span></h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярные</option>
@@ -201,7 +201,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -213,7 +213,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
