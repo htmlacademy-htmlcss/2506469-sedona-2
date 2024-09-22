@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Никита Шеленков](https://up.htmlacademy.ru/htmlcss-individual/2/user/2506469).
-* Наставник: [Дарья Шестерена] (https://htmlacademy.ru/profile/id221124).
+* Наставник: [] ().
 * Проект: [Проект Седона] (https://ctrlnik.github.io/2506469-sedona-2/).
 ---
 
