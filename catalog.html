@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header" data-test="header">
@@ -43,9 +44,7 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <img class="home" src="#" alt="Главная">
-            </a>
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -89,7 +88,7 @@
                 <li class="catalog-filter-item">
                   <label class="radio">
                     <input class="radio-input" type="radio" name="products-group" value="The-Motel">
-                    <span class="radio-label">Мотель</span>Мотель
+                    <span class="radio-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -203,11 +202,12 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe" data-test="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe subscribe-another" data-test="subscribe">
+        <h2 class="visually-hidden">Рассылка</h2>
+        <p class="subscribe-title subscribe-another">Подпишитесь на рассылку</p>
+        <p class="subscribe-description subscribe-another">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="subscribe-form-name">
+          <p class="subscribe-form-mail">
             <label class="visually-hidden" for="user-e-mail">Ваш e-mail</label>
             <input type="text" id="user-e-mail" name="user-e-mail" placeholder="Ваш e-mail">
           </p>
@@ -235,7 +235,7 @@
       </ul>
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="copyright" href="https://htmlacademy.ru/">
-        <img class="copyright-image" src="#" alt="Логотип HTML Academy">
+        <span class="visually-hidden">Сайт HTML Academy</span>
       </a>
     </footer>
   </body>
