@@ -39,7 +39,9 @@ text-decoration: none;
   background-repeat: no-repeat;
 }
 
-.header-paragraph {
+/* Заголовки */
+
+.main-headlines {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -102,22 +104,18 @@ color: #000000;
 
 /* Рассылка */
 
-.subscribe-title {
-font-size: 30px;
-font-weight: 700;
-line-height: 36px;
-text-align: center;
+.subscribe-accent-title {
 color: #FFFFFF;
 }
 
-.subscribe-description {
+.subscribe-accent-description {
 font-size: 22px;
 line-height: 26px;
 text-align: center;
 color: #FFFFFF;
 }
 
-.subscribe {
+.subscribe-accent {
   background-image: url("../images/background/subscribe.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
@@ -173,3 +171,88 @@ color: #FFFFFF;
 }
 
 /* Каталог */
+
+/* Рассслыка 2-ой страницы */
+
+.subscribe-description {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+.product-card-title {
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+color: #000000;
+}
+
+.product-card-price {
+text-align: right;
+}
+
+.product-card-rating {
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+}
+
+/* Убрал visually-hidden */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Кнопки */
+
+.button {
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+text-align: center;
+color: #FFFFFF;
+background: #756157;
+text-transform: uppercase;
+}
+
+.search-button {
+font-size: 20px;
+line-height: 36px;
+}
+
+.subscribe-button {
+font-size: 20px;
+line-height: 36px;
+background: #82B3D3;
+}
+
+.product-favorite-button {
+  background: #82B3D3;
+}
+
+.button-accent {
+  background: #7DB54F;
+}
+
+.button-filter {
+  background: #82B3D3;
+}
+
+.button-light {
+  background: none;
+  border: none;
+}
+
+.product-card-button {
+  text-decoration: none;
+}
