@@ -14,7 +14,14 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -24,13 +31,99 @@ body {
   margin: 0;
 }
 
+.page-body {
+  background: #F2F2F2;
+  box-shadow: 0 0 15px 0 #00000033;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+/* Навигация */
+
 .navigation-link {
-font-size: 20px;
-font-weight: 700;
-line-height: 24px;
-color: #000000;
-text-align: center;
-text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 350px;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.navigation-logo {
+  max-width: 150px;
+  margin-right: auto;
+}
+
+/* Сетка main */
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.slogan {
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.header-advantages {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.header-services {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item {
+  width: 400px;
+}
+
+/* Сетка footer */
+
+.page-footer-container {
+display: flex;
+width: 1200px;
+margin: 0 auto;
 }
 
 .hero {
@@ -58,15 +151,15 @@ text-decoration: none;
 /* Преимущества */
 
 .advantages-title {
-font-size: 24px;
-font-weight: 700;
-line-height: 28px;
-text-align: center;
-color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
 }
 
 .advantages-description {
-text-align: center;
+  text-align: center;
 }
 
 .text-light {
@@ -75,7 +168,6 @@ text-align: center;
 
 .advantages-item {
   background: rgba(130, 179, 211, 1);
-  ;
 }
 
 .advantages-light {
@@ -89,30 +181,32 @@ text-align: center;
 /* Сервис */
 
 .services-title {
-font-size: 24px;
-font-weight: 700;
-line-height: 28px;
-text-align: center;
-color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
 }
 
 .services-description {
   text-align: center;
 }
 
-/* Поиск гостиицы в Седоне */
+.services-accent {
+  background: #83B3D31F;
+}
 
 /* Рассылка */
 
 .subscribe-accent-title {
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .subscribe-accent-description {
-font-size: 22px;
-line-height: 26px;
-text-align: center;
-color: #FFFFFF;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .subscribe-accent {
@@ -124,10 +218,10 @@ color: #FFFFFF;
 /* Футер */
 
 .phone {
-font-size: 40px;
-line-height: 40px;
-text-align: center;
-color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
 }
 
 /* Разметка 2-ой страницы Гостиницы */
@@ -141,33 +235,33 @@ color: #000000;
 }
 
 .inner-header-title {
-font-size: 60px;
-font-weight: 700;
-line-height: 78px;
-text-align: left;
-color: #FFFFFF;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  color: #FFFFFF;
 }
 
 .breadcrumbs-link {
-font-size: 16px;
-line-height: 21px;
-text-align: left;
-color: #FFFFFF;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+  color: #FFFFFF;
 }
 
 .catalog-filter-title {
-font-size: 20px;
-font-weight: 700;
-line-height: 24px;
-text-align: left;
-color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #FFFFFF;
 }
 
 .catalog-filter-item {
-font-size: 18px;
-line-height: 23px;
-text-align: left;
-color: #FFFFFF;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+  color: #FFFFFF;
 }
 
 /* Каталог */
@@ -176,26 +270,25 @@ color: #FFFFFF;
 
 .subscribe-description {
   font-size: 22px;
-  font-weight: 400;
   line-height: 26px;
   text-align: center;
 }
 
 .product-card-title {
-font-size: 24px;
-font-weight: 700;
-line-height: 28px;
-color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
 }
 
 .product-card-price {
-text-align: right;
+  text-align: right;
 }
 
 .product-card-rating {
-font-size: 16px;
-line-height: 20px;
-text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
 }
 
 /* Убрал visually-hidden */
@@ -216,24 +309,24 @@ text-align: center;
 /* Кнопки */
 
 .button {
-font-size: 16px;
-font-weight: 700;
-line-height: 20px;
-text-align: center;
-color: #FFFFFF;
-background: #756157;
-text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #756157;
+  text-transform: uppercase;
 }
 
 .search-button {
-font-size: 20px;
-line-height: 36px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .subscribe-button {
-font-size: 20px;
-line-height: 36px;
-background: #82B3D3;
+  font-size: 20px;
+  line-height: 36px;
+  background: #82B3D3;
 }
 
 .product-favorite-button {
@@ -260,15 +353,27 @@ background: #82B3D3;
 /* Пагинация */
 
 .pagination-link {
-font-size: 20px;
-font-weight: 700;
-line-height: 36px;
-text-align: center;
-color: #FFFFFF;
-background: #82B3D3;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #82B3D3;
 }
 
 .pagination-current {
-background: #F2F2F2;
-color: #000000;
+  background: #F2F2F2;
+  color: #000000;
+}
+
+/* Секта 2-ой страницы */
+
+.catalog-filter {
+  display: flex;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
 }
