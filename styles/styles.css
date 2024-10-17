@@ -309,7 +309,10 @@ img {
 
 .subscribe-form {
   display: flex;
+  align-items: center;
   margin-bottom: 104px;
+  background-color: #f2f2f2;
+  height: 52px
 }
 
 .subscribe-input {
@@ -320,6 +323,8 @@ img {
 .subscribe-form-button {
   min-width: 232px;
   border-radius: 0 4px 4px 0;
+  height: 100%;
+  border: none;
 }
 
 .form-input {
@@ -364,8 +369,12 @@ img {
 
 .inner-header {
   background-image: url("../images/background/filter.jpg");
-  background-size: 100% auto, cover;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+.header-block {
+  padding: 35px 70px 70px 70px;
 }
 
 .inner-header-title {
@@ -374,13 +383,29 @@ img {
   line-height: 78px;
   text-align: left;
   color: #FFFFFF;
+  margin: 0;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link {
+  margin-right: 28px;
   font-size: 16px;
   line-height: 21px;
   text-align: left;
   color: #FFFFFF;
+}
+
+.catalog-filter {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-title {
@@ -396,6 +421,48 @@ img {
   line-height: 23px;
   text-align: left;
   color: #FFFFFF;
+  list-style: none;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.catalog-products-title {
+  text-align: start;
+}
+
+.sorting-container {
+  display: flex;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.sorting-container .button {
+  width: 48px;
+  height: 48px;
+  background-color: #FFFFFF;
+  border: solid 2px black;
+  margin-right: 8px;
+}
+
+.select-control {
+  width: 292px;
+  margin-right: 70px;
+  border: solid 2px black;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 40px 70px 60px 70px;
 }
 
 /* Каталог */
@@ -497,6 +564,18 @@ img {
 
 /* Пагинация */
 
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-item {
+  display: block;
+  margin-right: 8px;
+}
+
 .pagination-link {
   font-size: 20px;
   font-weight: 700;
@@ -504,21 +583,11 @@ img {
   text-align: center;
   color: #FFFFFF;
   background: #82B3D3;
+  padding: 12px 24px;
+  border-radius: 4px;
 }
 
 .pagination-current {
   background: #F2F2F2;
   color: #000000;
-}
-
-/* Секта 2-ой страницы */
-
-.catalog-filter {
-  display: flex;
-}
-
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
 }
