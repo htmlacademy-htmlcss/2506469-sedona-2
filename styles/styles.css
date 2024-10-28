@@ -435,45 +435,128 @@ img {
 
 .catalog-filter {
   display: flex;
+  width: 1060px;
   margin: 0;
   padding: 0;
-  width: 1060px;
-  border: 1px solid;
 }
 
 .catalog-choose {
   display: flex;
   gap: 70px;
+  margin: 0;
 }
 
 .catalog-filter-group {
   padding: 0;
   width: 150px;
+  border: none;
 }
 
 .catalog-filter-list {
   padding: 0;
 }
 
-.last-filter-group {
-  display: flex;
-  gap: 70px;
-  margin-right: 0;
-  margin-left: auto;
+.filter-block {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
 }
 
-.filter-block {
+.catalog-filter-range-group {
   display: flex;
-  flex-direction: column;
-  padding: 0;
+  align-items: center;
+  gap: 2px;
+}
+
+.catalog-filter-range-label {
+  position: relative;
+}
+
+.catalog-input-renge-input {
+  width: 143px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border: none;
+  background-color: #F2F2F2;
+  padding: 12px 20px;
+}
+
+.catalog-input-range-label-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.3;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+  height: fit-content;
+}
+
+.catalog-input-renge-input-reverse {
+  border-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.catalog-filter-slaider {
+  width: 100%;
+  margin-top: 36px;
+}
+
+.catalog-filter-slaider-total {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.catalog-filter-slaider-current {
+  width: 226px;
+  height: 100%;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.catalog-filter-slaider-current::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: -9px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.catalog-filter-slaider-current::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  position: absolute;
+  right: 0;
+  top: -9px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .filter-button {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   gap: 32px;
   margin-top: 56px;
+  margin-left: 70px;
 }
 
 .button-filter {
@@ -497,6 +580,7 @@ img {
   line-height: 24px;
   text-align: left;
   color: #FFFFFF;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-item {
@@ -505,6 +589,7 @@ img {
   text-align: left;
   color: #FFFFFF;
   list-style: none;
+  margin-bottom: 16px;
 }
 
 /* Гостиницы список */
@@ -534,13 +619,41 @@ img {
   width: 48px;
   height: 48px;
   background-color: #FFFFFF;
-  border: solid 2px black;
+  border: solid 2px #e5e5e5;
+  border-radius: 4px;
+}
+
+.button-filter-card:nth-child(1) {
+  background: url(../images/icons/tile.svg) no-repeat;
+  background-position: center;
+}
+
+.button-filter-card:nth-child(2) {
+  background: url(../images/icons/card.svg) no-repeat;
+  background-position: center;
+}
+
+.button-filter-card:nth-child(3) {
+  background: url(../images/icons/list.svg) no-repeat;
+  background-position: center;
+}
+
+.button-current {
+  border: solid 2px #000000;
 }
 
 .select-control {
   width: 292px;
+  font-size: 18px;
+  line-height: 21px;
   margin-right: 70px;
-  border: solid 2px black;
+  border: solid 2px #e5e5e5;
+  border-radius: 4px;
+  color: #333333;
+  background-color: #FFFFFF;
+  padding: 14px 0 14px 20px;
+  margin-left: auto;
+  cursor: pointer;
 }
 
 .catalog-container {
@@ -679,6 +792,7 @@ img {
 }
 
 .pagination-link {
+  display: block;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -687,6 +801,21 @@ img {
   background: #82B3D3;
   padding: 12px 24px;
   border-radius: 4px;
+}
+
+.pagination-text {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  color: #000000;
+  font-family: PT Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination-current {

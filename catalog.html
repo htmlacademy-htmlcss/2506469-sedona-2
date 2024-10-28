@@ -106,22 +106,28 @@
                   </ul>
                 </fieldset>
               </div>
-              <div class="last-filter-group">
-                <fieldset class="filter-block">
-                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <label class="filter-range-control">От <input type="text" name="min-interval" value="0"></label>
-                  <label class="filter-range-control">До <input type="text" name="max-interval" value="9000"></label>
-                  <button class="filter-range-button min" type="button">
-                    <span class="visually-hidden">Упарвление нижней границей стоимости</span>
-                  </button>
-                  <button class="filter-range-button max" type="button">
-                    <span class="visually-hidden">Упарвление верхней границей стоимости</span>
-                  </button>
-                </fieldset>
-                <div class="filter-button">
-                  <button class="button button-filter" type="button">Применить</button>
-                  <button class="button button-light" type="reset">Сбросить</button>
+              <fieldset class="filter-block">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <div class="catalog-filter-range-group">
+                  <label class="catalog-filter-range-label">
+                    <input class="catalog-input-renge-input" type="text" value="0">
+                    <span class="catalog-input-range-label-text">От</span>
+                  </label>
+                  <label class="catalog-filter-range-label">
+                    <input class="catalog-input-renge-input catalog-input-renge-input-reverse" type="text" value="9000">
+                    <span class="catalog-input-range-label-text">До</span>
+                  </label>
                 </div>
+                <div class="catalog-filter-slaider">
+                  <div class="catalog-filter-slaider-total">
+                    <div class="catalog-filter-slaider-current">
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="filter-button">
+                <button class="button button-filter" type="button">Применить</button>
+                <button class="button button-light" type="reset">Сбросить</button>
               </div>
             </form>
           </div>
@@ -136,7 +142,7 @@
                 <option value="expensive">Сначала дорогие</option>
               </select>
               <div class="button-filter-block">
-                <a class="button-filter-card button" href="#">
+                <a class="button-filter-card button button-current" href="#">
                   <span class="visually-hidden">Показать плиткой</span>
                 </a>
                 <a class="button-filter-card button" href="#">
