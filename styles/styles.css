@@ -82,6 +82,7 @@ img {
 /* Навигация header */
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 16px;
   font-size: 20px;
@@ -90,6 +91,16 @@ img {
   color: #000000;
   text-align: center;
   text-decoration: none;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 16px;
+  left: 16px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
 
 .navigation {
@@ -214,6 +225,28 @@ img {
   margin: 102px 85px;
 }
 
+.advantages-item::before {
+  position: absolute;
+  top: 198px;
+  right: 170px;
+  left: 170px;
+  height: 2px;
+  width: 60px;
+  background-color: #0000004D;
+  content: "";
+}
+
+.advantages-item-wide::before {
+  position: absolute;
+  top: 188px;
+  right: 170px;
+  left: 170px;
+  height: 2px;
+  width: 60px;
+  background-color: #FFFFFF4D;
+  content: "";
+}
+
 .advantages-block-middle {
   margin: 113px 85px;
 }
@@ -246,6 +279,7 @@ img {
 }
 
 .advantages-item {
+  position: relative;
   background: rgba(130, 179, 211, 1);
   min-width: calc(100% / 3);
   width: 400px;
@@ -257,11 +291,11 @@ img {
 }
 
 .advantages-light {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-medium {
-  background: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 /* Сервис */
@@ -313,8 +347,24 @@ img {
   text-align: center;
 }
 
-.services-accent {
-  background: #83B3D31F;
+.services-item:nth-child(1) {
+  background: url(../images/icons/house.svg) no-repeat;
+  background-position: center;
+  background-position-y: 81px;
+  background-color: #83B3D31F;
+}
+
+.services-item:nth-child(2) {
+  background: url(../images/icons/food.svg) no-repeat;
+  background-position: center;
+  background-position-y: 81px;
+}
+
+.services-item:nth-child(3) {
+  background: url(../images/icons/present.svg) no-repeat;
+  background-position: center;
+  background-position-y: 81px;
+  background-color: #83B3D31F;
 }
 
 /* Поиск  */
@@ -329,6 +379,14 @@ img {
   max-width: 592px;
   margin: auto;
   padding: 96px;
+}
+
+.search-button {
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 50px;
+  border-radius: 4px;
+  border: none;
 }
 
 /* Рассылка */
@@ -810,13 +868,6 @@ img {
 .navigation-button {
   display: block;
   padding: 8px 34px;
-  border-radius: 4px;
-}
-
-.search-button {
-  font-size: 20px;
-  line-height: 36px;
-  padding: 8px 50px;
   border-radius: 4px;
 }
 
