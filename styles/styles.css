@@ -50,6 +50,7 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .page-container {
@@ -222,7 +223,7 @@ img {
 }
 
 .advantages-block-text {
-  margin: 102px 85px;
+  padding: 102px 85px;
 }
 
 .advantages-item::before {
@@ -248,7 +249,7 @@ img {
 }
 
 .advantages-block-middle {
-  margin: 113px 85px;
+  padding: 113px 85px;
 }
 
 .header-advantages {
@@ -302,7 +303,7 @@ img {
 
 .header-services-paragraph {
   display: block;
-  margin: 64px 348px 20px;
+  padding: 64px 348px 20px;
 }
 
 
@@ -326,7 +327,7 @@ img {
 }
 
 .services-block {
-  margin: 81px 85px;
+  padding: 81px 85px;
 }
 
 .services-paragraph {
@@ -537,6 +538,12 @@ img {
   color: #FFFFFF;
 }
 
+.breadcrumbs-item-image {
+  background: url(../images/icons/breadcrumb.svg) no-repeat;
+  background-position: center;
+  background-color: #7DB54F;
+}
+
 /* Каталог */
 
 /* Фильтер гостиниц */
@@ -561,6 +568,7 @@ img {
 }
 
 .catalog-filter-list {
+  margin: 0;
   padding: 0;
 }
 
@@ -697,7 +705,49 @@ img {
   text-align: left;
   color: #FFFFFF;
   list-style: none;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.checkbox-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.checkbox-input[type="checkbox"]:checked + .checkbox-mark::before {
+  position: absolute;
+  background: url(../images/checkbox/mark.svg);
+  background-position: center;
+}
+
+.radio {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.radio-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.radio-input[type="radio"]:checked + .radio-mark::before {
+  position: absolute;
+  background: url(../images/checkbox/circle.svg);
+  background-position: center;
 }
 
 /* Гостиницы список */
