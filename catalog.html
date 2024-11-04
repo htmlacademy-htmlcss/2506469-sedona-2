@@ -11,22 +11,24 @@
     <div class="page-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <div class="navigation-logo">
-            <a class="logo-link" href="index.html">
-              <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
-            </a>
+          <div class="navigation-left">
+            <div class="navigation-logo">
+              <a class="logo-link" href="index.html">
+                <img class="logo" src="images/logo.svg" width="140" alt="Логотип Седона">
+              </a>
+            </div>
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link" href="index.html">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">О Седоне</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+              </li>
+            </ul>
           </div>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О Седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
-            </li>
-          </ul>
           <ul class="navigation-user">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
@@ -90,7 +92,8 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="radio">
-                        <input class="visually-hidden radio-input" type="radio" name="products-group" value="Hotel" checked>
+                        <input class="visually-hidden radio-input" type="radio" name="products-group" value="Hotel"
+                          checked>
                         <span class="radio-mark"></span>
                         <span class="radio-label">Гостиница</span>
                       </label>
@@ -104,7 +107,8 @@
                     </li>
                     <li class="catalog-filter-item">
                       <label class="radio">
-                        <input class="visually-hidden radio-input" type="radio" name="products-group" value="Apartments">
+                        <input class="visually-hidden radio-input" type="radio" name="products-group"
+                          value="Apartments">
                         <span class="radio-mark"></span>
                         <span class="radio-label">Апартаменты</span>
                       </label>
@@ -255,8 +259,11 @@
         </section>
         <section class="subscribe" data-test="subscribe">
           <h2 class="visually-hidden">Рассылка</h2>
-          <p class="subscribe-title main-headlines">Подпишитесь на рассылку</p>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <div class="subscribe-block">
+            <p class="subscribe-title subscribe-accent-title main-headlines">Подпишитесь на рассылку</p>
+            <p class="subscribe-description subscribe-accent-description paragraph">Только полезная информация и
+              никакого спама,<br> честное бойскаутское!</p>
+          </div>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="subscribe-form-mail">
               <label class="visually-hidden" for="user-e-mail">Ваш e-mail</label>
