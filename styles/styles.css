@@ -242,7 +242,6 @@ img {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -253,48 +252,31 @@ img {
   align-items: center;
 }
 
-.advantages-block-text {
-  padding: 102px 85px;
-}
-
-.advantages-title::before {
-  position: absolute;
-  top: 86px;
-  right: 57px;
-  left: 57px;
-  height: 2px;
-  width: 60px;
-  background-color: #0000004D;
-  content: "";
-}
-
-.text-light::before {
-  position: absolute;
-  top: 86px;
-  right: 57px;
-  left: 57px;
-  height: 2px;
-  width: 60px;
-  background-color: #FFFFFF4D;
-  content: "";
-}
-
 .advantages-block-middle {
-  padding: 113px 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 230px;
+  width: 100%;
 }
 
 .advantages-title {
-  position: relative;
-  margin: 0 28px 62px;
+  max-width: 175px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  text-align: center;
   color: #000000;
+  text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  overflow-wrap: break-word;
 }
 
 .advantages-description {
+  max-width: 230px;
+  overflow-wrap: break-word;
   margin: 0;
   text-align: center;
 }
@@ -304,22 +286,44 @@ img {
 }
 
 .advantages-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(130, 179, 211, 1);
-  min-width: calc(100% / 3);
-  width: 400px;
+  max-width: calc(100% / 3);
+  width: 100%;
+  padding: 102px 0;
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-list > .advantages-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-line {
+  width: 60px;
+  height: 2px;
+}
+
+.line-black {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.line-white {
+  background-color: rgba(255, 255, 255, 0.3);
+
 }
 
 .advantages-item-wide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   min-width: 100%;
   max-width: 100%;
 }
 
-.advantages-light {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-medium {
-  background-color: rgba(131, 179, 211, 0.2);
+.advantages-accent-color {
+  background-color: rgba(130, 179, 211, 1);
 }
 
 /* Сервис */
