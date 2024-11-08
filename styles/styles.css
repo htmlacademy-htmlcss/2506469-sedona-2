@@ -46,11 +46,30 @@ img {
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
-  background: #756157;
+  background-color: rgba(117, 97, 87, 1);
   text-transform: uppercase;
   margin: 0;
   padding: 0;
   cursor: pointer;
+}
+
+.button {
+  background-color: rgba(117, 97, 87, 1);
+}
+
+.button:hover {
+  background-color: rgba(97, 80, 72, 1);
+}
+.button:focus {
+  background-color: rgba(97, 80, 72, 1);
+}
+
+.button:active {
+  background-color: rgba(117, 97, 87, 1);
+}
+
+.button:disabled {
+  background-color: rgba(229, 229, 229, 1);
 }
 
 .page-container {
@@ -356,7 +375,7 @@ img {
 }
 
 .services-item {
-  width: 400px;
+  max-width: 400px;
 }
 
 .services-block {
@@ -376,11 +395,13 @@ img {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  overflow-wrap: break-word;
 }
 
 .services-description {
   text-align: center;
   margin: 0;
+  overflow-wrap: break-word;
 }
 
 .services-item-icon-house::before {
@@ -533,6 +554,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  gap: 30px;
   padding: 0;
   margin: 0;
 }
@@ -545,30 +567,58 @@ img {
   text-align: center;
 }
 
+.phone:hover {
+  color: #756157;
+}
+
+.phone:focus {
+  color: #756157;
+}
+
+.phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .social-link {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.social-item {
-  width: 47px;
-  height: 40px;
+.social-link .social-icon {
+  fill: rgba(131, 179, 211, 1);
 }
 
-.social-item:nth-child(1) {
-  background: url("../images/icons/vk.svg") no-repeat;
-  background-position: center;
+.social-link:hover .social-icon {
+  fill: rgba(104, 162, 202, 1);
 }
 
-.social-item:nth-child(2) {
-  background: url("../images/icons/tg.svg") no-repeat;
-  background-position: center;
+.social-link:focus .social-icon {
+  fill: rgba(104, 162, 202, 1);
 }
 
-.social-item:nth-child(3) {
-  background: url("../images/icons/youtube.svg") no-repeat;
-  background-position: center;
+.social-link:active .social-icon {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.copyright {
+  color: #000000;
+ }
+
+.copyright:hover {
+  color: #756157;
+}
+
+.copyright:focus {
+  color: #756157;
+}
+
+.copyright:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.copyright svg {
+  vertical-align: middle;
 }
 
 /* Разметка 2-ой страницы Гостиницы */
@@ -821,7 +871,6 @@ img {
   position: absolute;
   background: url(../images/checkbox/mark.svg);
   background-position: center;
-
 }
 
 .radio {
@@ -917,7 +966,6 @@ img {
   margin-left: auto;
   cursor: pointer;
 }
-
 
 .catalog-container {
   padding: 50px 70px 60px 70px;
