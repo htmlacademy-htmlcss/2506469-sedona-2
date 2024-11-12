@@ -545,6 +545,16 @@ img {
   border-radius: 4px;
 }
 
+.subscribe-input:hover {
+  background-color: #E6E6E6;
+}
+
+.subscribe-input:focus {
+  background-color: #E6E6E6;
+  border: 3px solid rgba(131, 179, 211, 1);
+  outline: none;
+}
+
 .subscribe-form-button {
   min-width: 232px;
   border-radius: 4px;
@@ -777,6 +787,16 @@ img {
   background-color: #F2F2F2;
   padding: 12px 20px;
   box-sizing: border-box;
+}
+
+.catalog-input-renge-input:hover {
+  background-color: #E6E6E6;
+}
+
+.catalog-input-renge-input:focus {
+  background-color: #E6E6E6;
+  border: 3px solid rgba(131, 179, 211, 1);
+  outline: none;
 }
 
 .catalog-input-range-label-text {
