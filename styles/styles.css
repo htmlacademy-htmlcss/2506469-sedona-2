@@ -159,6 +159,14 @@ img {
   text-decoration: none;
 }
 
+.navigation-link:hover {
+  color: #68A2CA;
+}
+
+.navigation-link:active {
+  color: rgb(186, 216, 236);
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -190,11 +198,32 @@ img {
 }
 
 .navigation-user {
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.navigation-link-search::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  bottom: 10px;
+  right: 8px;
+  background: url(../images/icons/search.svg);
+}
+
+.navigation-link-heart::before {
+  position: absolute;
+  content: "";
+  right: 16px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/icons/heart.svg);
 }
 
 .navigation-button {
@@ -216,23 +245,13 @@ img {
   position: relative;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link {
-  background: url(../images/icons/search.svg) no-repeat;
-  background-position: center;
-}
-
-.navigation-user .navigation-item:nth-child(2) .navigation-link {
-  background: url(../images/icons/heart.svg) no-repeat;
-  background-position: center;
-}
-
 .navigation-link-badge {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -9px;
-  left: 9px;
+  top: -11px;
+  left: 8px;
   width: 20px;
   height: 20px;
   color: #ffffff;
@@ -249,6 +268,7 @@ img {
   background-image: url(../images/background/background-1.jpg);
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
+  background-color: #68A2CA;
 }
 
 .slogan-block {
@@ -256,12 +276,12 @@ img {
   display: block;
   text-align: center;
   padding-top: 51px;
-  padding-bottom: 82px;
+  padding-bottom: 78px;
 }
 
 .decoration {
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   left: 0;
 }
 
@@ -284,7 +304,7 @@ img {
   color: #000000;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
+  padding: 3px 0 0 2px;
 }
 
 .paragraph {
@@ -355,6 +375,10 @@ img {
 }
 
 .text-light {
+  color: #FFFFFF;
+}
+
+.text-light-description {
   color: #FFFFFF;
 }
 
@@ -434,7 +458,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 190px 85px 80px 85px;
+  padding: 188px 85px 80px 85px;
 }
 
 .services-title {
@@ -498,7 +522,7 @@ img {
 }
 
 .header-search-paragraph {
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 }
 
 .search-paragraph {
@@ -507,7 +531,7 @@ img {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 .search-block {
@@ -519,7 +543,7 @@ img {
 .search-button {
   font-size: 20px;
   line-height: 36px;
-  padding: 8px 50px;
+  padding: 13px 50px;
   border-radius: 4px;
   border: none;
   text-decoration: none;
@@ -529,6 +553,7 @@ img {
 
 .subscribe-accent-title {
   color: #FFFFFF;
+  padding-top: 5px;
 }
 
 .subscribe-accent-description {
@@ -536,6 +561,7 @@ img {
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+  padding-bottom: 35px;
 }
 
 .subscribe-description {
@@ -551,6 +577,8 @@ img {
   background-image: url("../images/background/subscribe.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
+  background-color: #68A2CA;
+  height: 415px;
 }
 
 .subscribe {
@@ -562,17 +590,17 @@ img {
 }
 
 .subscribe-block {
-  padding-top: 94px;
+  padding-top: 99px;
 }
 
 .subscribe-title {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .subscribe-form {
   display: flex;
   align-items: center;
-  margin-bottom: 104px;
+  margin-bottom: 100px;
   background-color: #f2f2f2;
   height: 52px;
   border-radius: 4px;
@@ -706,6 +734,7 @@ img {
   background-image: url("../images/background/filter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #68A2CA;
 }
 
 .header-block {
@@ -1046,7 +1075,8 @@ img {
   top: 5px;
   left: 5px;
   position: absolute;
-  background: url(../images/checkbox/circle.svg);
+  border-radius: 50%;
+  background-color: rgba(63, 94, 114, 1);
   background-position: center;
 }
 
@@ -1140,7 +1170,7 @@ img {
 }
 
 .catalog-container {
-  padding: 48px 70px 60px 70px;
+  padding: 48px 70px 55px 70px;
 }
 
 .product-list {

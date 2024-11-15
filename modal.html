@@ -31,12 +31,12 @@
           </div>
           <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-link-heart" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="navigation-link-badge">12</span>
               </a>
@@ -67,7 +67,8 @@
               <div class="advantages-item">
                 <div class="advantages-block-middle">
                   <h3 class="advantages-title text-light">Настоящий городок</h3>
-                  <p class="advantages-description text-light">Седона — не аттракцион для туристов, там течёт своя
+                  <p class="advantages-description text-light-description">Седона — не аттракцион для туристов, там
+                    течёт своя
                     жизнь
                   </p>
                 </div>
@@ -99,7 +100,7 @@
               <div class="advantages-item">
                 <div class="advantages-block-middle">
                   <h3 class="advantages-title text-light">Там есть<br> мост дьявола</h3>
-                  <p class="advantages-description text-light">Да, по нему можно пройти! Если вы осмелитесь,
+                  <p class="advantages-description text-light-description">Да, по нему можно пройти! Если вы осмелитесь,
                     разумеется
                   </p>
                 </div>
@@ -148,14 +149,14 @@
         <section class="subscribe subscribe-accent" data-test="subscribe">
           <h2 class="visually-hidden">Рассылка</h2>
           <div class="subscribe-block">
-            <p class="subscribe-title subscribe-accent-title main-headlines">Подпишитесь на рассылку</p>
-            <p class="subscribe-description subscribe-accent-description">Только полезная информация и
+            <p class="subscribe-accent-title main-headlines">Подпишитесь на рассылку</p>
+            <p class="subscribe-accent-description">Только полезная информация и
               никакого спама,<br> честное бойскаутское!</p>
           </div>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="user-e-mail">Ваш e-mail</label>
             <input class="subscribe-input form-input" type="text" id="user-e-mail" name="user-e-mail"
-              placeholder="Ваш e-mail">
+              placeholder="Ваш e-mail" required="">
             <button class="button subscribe-button subscribe-form-button button-light"
               type="submit">Подписаться</button>
           </form>
