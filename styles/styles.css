@@ -1342,10 +1342,26 @@ img {
 .product-card-stars {
   display: flex;
   align-items: center;
-  gap: 6px;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
+}
+
+.card-star {
+  block-size: 17px;
+  background-image: url(../images/icons/star.svg);
+  background-repeat: space;
+  background-position: center;
+  background-size: 18px 17px;
+}
+
+.card-star-four {
+  inline-size: 89px;
+}
+
+.card-star-three {
+  inline-size: 66px;
+}
+
+.card-star-two {
+  inline-size: 42px;
 }
 
 .product-card-rating {
